@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 2em;
+    box-shadow: 2px 1px 5px;
+}
+
+h1{
+    cursor: pointer;
+}
+
+h1:hover{
+    color: #a7a7a7;
+    transition: all 0.2s;
+}
+
+.ul{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.4em;
+}
+
+li{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    margin: 0 2em;
+    cursor: pointer;
+}
+
+li:hover{
+    color: #a7a7a7;
+    transition: all 0.2s;
+}
+
+.button{
+    background-color: #000;
+    border: rgba(0, 0, 0, 0);
+    width: 7em;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button:hover{
+    background-color: #a7a7a7;
+    transition: all 0.2s;
+    font-weight: bold;
+}
+
+i{
+    font-size: 2em;
+}
+
+.menu{
+    display: none;
+    cursor: pointer;
+}
+
+.menu:hover{
+    color: #a7a7a7;
+    transition: all 0.2s;
+}
+
+.li{
+    display: none;
+}
+
+.li button{
+    display: none;
+}
+
+form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    width: 300px;
+    padding: 15px;
+}
+
+input{
+    margin: 5px 0px;
+    height: 35px;
+    padding: 7px;
+    text-align: center;
+}
+
+
+@media (max-width: 900px) {
+    nav li{
+        display: none;
+    }
+
+    nav button{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .li{
+        display: block;
+        border: #000 solid 1px;
+        border-top: none;
+        padding-top: 1.5em;
+        display: none;
+    }
+
+    .li li{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1.5em;
+    }
+
+    .li button{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 1.5em;
+        background-color: #000;
+        width: 10em;
+        height: 2em;
+        padding: auto;
+    }
+
+    .open{
+        display: block;
+    }
+}
